@@ -4,22 +4,11 @@ public class Cconsole {
 
     public final static void clearConsole()
     {
-        try
-        {
-            final String os = System.getProperty("os.name");
+        String clear = "\n";
 
-            if (os.contains("Windows"))
-            {
-                Runtime.getRuntime().exec("cls");
-            }
-            else
-            {
-                Runtime.getRuntime().exec("clear");
-            }
-        }
-        catch (final Exception e)
-        {
-            //  Handle any exceptions.
+        for (int i = 0; i > 15; i++ ){
+            System.out.println(clear);
+
         }
     }
 }
