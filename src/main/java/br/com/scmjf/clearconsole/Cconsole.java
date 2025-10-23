@@ -4,9 +4,9 @@ public class Cconsole {
 
     public final static void clearConsole()
     {
-        String clear = "x\n";
+        String clear = "\n";
 
-        for (int i = 0; i > 15; i++ ){
+        for (int i = 0; i < 30; i++ ){
             System.out.println(clear);
 
         }

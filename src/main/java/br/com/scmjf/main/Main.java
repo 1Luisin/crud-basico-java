@@ -24,15 +24,15 @@ public class Main{
             if (option == 1){
                 System.out.println("Digite o nome de usuário dê ENTER e digite a senha dê ENTER e digite o id.");
                 usuario.adicionar(new User(input.next(), input.next(),input.next()));
-                System.out.println("Pressione ENTER para confirmar!");
+                System.out.println("Digite qualquer coisa para confirmar!");
                 input.next();
                 ccleaner.clearConsole();
             }
             else if(option == 2){
                 System.out.println("Digite o id do usuário que deseja deletar");
                 usuario.deletar(input.nextInt());
-                System.out.println("Pressione ENTER para confirmar!");
-                input.nextLine();
+                System.out.println("Digite qualquer coisa para confirmar!");
+                input.next();
                 ccleaner.clearConsole();
             }
             else if(option == 3){
