@@ -9,7 +9,7 @@ public class UsuarioDao {
 
     //Função para adicionar usuário
     public void adicionar(User user) {
-        String sql = "INSERT INTO USUARIO (user_name, pass_word, id) VALUES (?,?,?)";
+        String sql = "INSERT INTO usuario (user_name, pass_word, id) VALUES (?,?,?)";
 
         try (Connection con = Conexao.Conectar();
              PreparedStatement stmt = con.prepareStatement(sql)) {
@@ -42,7 +42,7 @@ public class UsuarioDao {
             stmt.setInt(1, id);
             stmt.executeUpdate();
 
-            System.out.println("Usuário removido!");
+            System.out.println("Usuário removido!"); // se a pessoa colocar um id que nao existe, dar um erro de que nao existe;
         }
         catch (SQLException e) {
             e.printStackTrace();

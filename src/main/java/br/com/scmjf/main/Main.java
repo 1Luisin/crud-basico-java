@@ -32,7 +32,7 @@ public class Main{
                 System.out.println("Digite o id do usuário que deseja deletar");
                 usuario.deletar(input.nextInt());
                 System.out.println("Digite qualquer coisa para confirmar!");
-                input.next();
+                input.next(); // trocar inputnext
                 ccleaner.clearConsole();
             }
             else if(option == 3){

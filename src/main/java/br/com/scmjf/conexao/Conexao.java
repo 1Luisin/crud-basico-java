@@ -10,7 +10,7 @@ public class Conexao {
     public static Connection Conectar() {
         String url = "jdbc:mysql://localhost:3306/scmjf";
         String usuario = "root";
-        String senha = "1234";
+        String senha = "aluno";
 
         try {
             Connection Conectar = DriverManager.getConnection(url, usuario, senha);
